@@ -15,8 +15,5 @@ target 'Netomi_To-Do' do
     # Pods for testing
   end
 
-  target 'Netomi_To-DoUITests' do
-    # Pods for testing
-  end
 
 end
