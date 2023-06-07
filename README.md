@@ -27,9 +27,10 @@ uncheck icon is for pending
 
 
 # Example Screenshots 
-![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 10 20 49](https://github.com/ismail2smile/NetomiTODO/assets/6158625/768f23f6-7939-4877-8438-4ff1d09f05e8)
-![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 10 20 51](https://github.com/ismail2smile/NetomiTODO/assets/6158625/893dffea-c371-4e59-a22a-3b875869182e)
-![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 10 20 53](https://github.com/ismail2smile/NetomiTODO/assets/6158625/515ebfd3-9178-41d3-80eb-6fc38fe5358d)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 14 28 01](https://github.com/ismail2smile/NetomiTODO/assets/6158625/488cdd32-8f45-4f2f-8e88-e2b2d0e268b8)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 14 28 06](https://github.com/ismail2smile/NetomiTODO/assets/6158625/1d27b662-83a7-4b71-a6e4-afa34ce424d9)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 14 28 09](https://github.com/ismail2smile/NetomiTODO/assets/6158625/e95f2b22-2034-4556-a97f-0fa2efffa3da)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 14 28 13](https://github.com/ismail2smile/NetomiTODO/assets/6158625/9f3e9460-0a60-4657-b20d-aad78c471683)
 
 ### Conditions 
 1. Only Time is shown for Todays Pending task whose time has not expired
@@ -39,6 +40,10 @@ uncheck icon is for pending
 
 ## Demo Video
 
+
+
+
+https://github.com/ismail2smile/NetomiTODO/assets/6158625/8be9c55c-e792-47d4-be50-a7d722218a73
 
 
 
