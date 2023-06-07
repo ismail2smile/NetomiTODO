@@ -21,16 +21,16 @@
 - Tap on the Add button
 
 ## How to Update/Delete the task
-1. To mark a task as complete or pending tap on the icon. ![check](https://github.com/ismail2smile/NetomiTODO/assets/6158625/d0b0da3c-b6d5-45fb-ae63-b4e368e19390) check icon is for Completed and ![uncheck](https://github.com/ismail2smile/NetomiTODO/assets/6158625/f9d11d9d-94fc-4ec4-bfaf-5d469cc5033a)
-uncheck icon is for pending
+1. To mark a task as complete or pending tap on the icon.check icon is for Completed and uncheck icon is for pending
 2. To delete, tap on the cross icon  and an alert popup appears, Tap on the delete button
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 15 16 12](https://github.com/ismail2smile/NetomiTODO/assets/6158625/bdf279d1-4340-4cef-9de0-b9672237015c)
 
 
 # Example Screenshots 
-![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 14 28 01](https://github.com/ismail2smile/NetomiTODO/assets/6158625/488cdd32-8f45-4f2f-8e88-e2b2d0e268b8)
-![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 14 28 06](https://github.com/ismail2smile/NetomiTODO/assets/6158625/1d27b662-83a7-4b71-a6e4-afa34ce424d9)
-![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 14 28 09](https://github.com/ismail2smile/NetomiTODO/assets/6158625/e95f2b22-2034-4556-a97f-0fa2efffa3da)
-![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 14 28 13](https://github.com/ismail2smile/NetomiTODO/assets/6158625/9f3e9460-0a60-4657-b20d-aad78c471683)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 15 02 45](https://github.com/ismail2smile/NetomiTODO/assets/6158625/ed64464e-660f-4967-a4b8-69d88e9e659e)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 15 02 07](https://github.com/ismail2smile/NetomiTODO/assets/6158625/fc9393e4-0288-4cd9-a8d8-567b08a038a3)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 15 02 10](https://github.com/ismail2smile/NetomiTODO/assets/6158625/862066e3-475c-424c-8998-24bcdf201224)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06-07 at 15 02 14](https://github.com/ismail2smile/NetomiTODO/assets/6158625/ea39094d-2ecc-417b-8e06-3c74aa064aa2)
 
 ### Conditions 
 1. Only Time is shown for Todays Pending task whose time has not expired
@@ -40,10 +40,8 @@ uncheck icon is for pending
 
 ## Demo Video
 
+https://github.com/ismail2smile/NetomiTODO/assets/6158625/b4f2a615-0077-4800-8333-f006e2e47828
 
-
-
-https://github.com/ismail2smile/NetomiTODO/assets/6158625/8be9c55c-e792-47d4-be50-a7d722218a73
 
 
 
