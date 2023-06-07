@@ -127,8 +127,29 @@ extension ListViewController: UITableViewDataSource{
 // MARK: - Table Delagate
 
 extension ListViewController: UITableViewDelegate{
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let tempView = UIView(frame: CGRect(x: 0, y: 10, width: tableView.frame.size.width, height: 20))
+        tempView.cornerRadius = 7
+        tempView.borderWidth = 1
+        tempView.borderColor = .white
+        tempView.backgroundColor = .white
+        return tempView;
+
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let tempView = UIView(frame: CGRect(x: 0, y: 10, width: tableView.frame.size.width, height: 20))
+        tempView.cornerRadius = 7
+        tempView.borderWidth = 1
+        tempView.borderColor = .white
+        tempView.backgroundColor = .white
+        return tempView;
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    
+        return 20
     }
 }
 
