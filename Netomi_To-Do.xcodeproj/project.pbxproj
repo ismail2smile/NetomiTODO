@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4338FDFB2A2F6F9500418122 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FDFA2A2F6F9500418122 /* NavigationCoordinator.swift */; };
+		4338FDFD2A2F6FD100418122 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FDFC2A2F6FD100418122 /* DependencyInjector.swift */; };
+		4338FE002A2F717800418122 /* RealmDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FDFF2A2F717800418122 /* RealmDBManager.swift */; };
+		4338FE032A2F744900418122 /* LocalDBRepositry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FE022A2F744900418122 /* LocalDBRepositry.swift */; };
+		4338FE052A2F752200418122 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FE042A2F752200418122 /* ListViewModel.swift */; };
+		4338FE0A2A2F7AB000418122 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FE092A2F7AB000418122 /* UIView+Extension.swift */; };
+		4338FE0D2A2F850100418122 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FE0C2A2F850100418122 /* Utils.swift */; };
+		4381305D2A30431600F33538 /* AddTodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4381305C2A30431600F33538 /* AddTodoViewModel.swift */; };
+		438130632A3051F100F33538 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438130622A3051F100F33538 /* ListViewController.swift */; };
 		43A90D7D2A2F453F002B5F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A90D7C2A2F453F002B5F08 /* AppDelegate.swift */; };
 		43A90D7F2A2F453F002B5F08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A90D7E2A2F453F002B5F08 /* SceneDelegate.swift */; };
-		43A90D812A2F453F002B5F08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A90D802A2F453F002B5F08 /* ViewController.swift */; };
 		43A90D842A2F453F002B5F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A90D822A2F453F002B5F08 /* Main.storyboard */; };
 		43A90D862A2F4541002B5F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A90D852A2F4541002B5F08 /* Assets.xcassets */; };
 		43A90D892A2F4541002B5F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A90D872A2F4541002B5F08 /* LaunchScreen.storyboard */; };
-		43A90D942A2F4542002B5F08 /* Netomi_To_DoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A90D932A2F4542002B5F08 /* Netomi_To_DoTests.swift */; };
-		43A90D9E2A2F4542002B5F08 /* Netomi_To_DoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A90D9D2A2F4542002B5F08 /* Netomi_To_DoUITests.swift */; };
-		43A90DA02A2F4542002B5F08 /* Netomi_To_DoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A90D9F2A2F4542002B5F08 /* Netomi_To_DoUITestsLaunchTests.swift */; };
+		43A90DB52A2F4F93002B5F08 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A90DB32A2F4F93002B5F08 /* ToDoTableViewCell.swift */; };
+		43A90DB62A2F4F93002B5F08 /* ToDoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43A90DB42A2F4F93002B5F08 /* ToDoTableViewCell.xib */; };
+		43A90DB92A2F66BA002B5F08 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A90DB82A2F66BA002B5F08 /* AddToDoViewController.swift */; };
+		43A90DC02A2F6E74002B5F08 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A90DBF2A2F6E74002B5F08 /* ToDoModel.swift */; };
+		43B4524D2A3053A900C64CCD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B4524C2A3053A900C64CCD /* Constants.swift */; };
+		43B452502A3056FB00C64CCD /* ListTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B4524F2A3056FB00C64CCD /* ListTestCase.swift */; };
+		C357249BADFB35979F887931 /* Pods_Netomi_To_Do.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290977BDE70DF68580626B31 /* Pods_Netomi_To_Do.framework */; };
+		D6D66F6DFC956978A04E2E55 /* Pods_Netomi_To_DoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEAADC3B20FEDB42D281D0F /* Pods_Netomi_To_DoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,29 +39,42 @@
 			remoteGlobalIDString = 43A90D782A2F453F002B5F08;
 			remoteInfo = "Netomi_To-Do";
 		};
-		43A90D9A2A2F4542002B5F08 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 43A90D712A2F453F002B5F08 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43A90D782A2F453F002B5F08;
-			remoteInfo = "Netomi_To-Do";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		290977BDE70DF68580626B31 /* Pods_Netomi_To_Do.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Netomi_To_Do.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30177FBCF9802EC70199D8A1 /* Pods_Netomi_To_Do_Netomi_To_DoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Netomi_To_Do_Netomi_To_DoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4338FDFA2A2F6F9500418122 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		4338FDFC2A2F6FD100418122 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		4338FDFF2A2F717800418122 /* RealmDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBManager.swift; sourceTree = "<group>"; };
+		4338FE022A2F744900418122 /* LocalDBRepositry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDBRepositry.swift; sourceTree = "<group>"; };
+		4338FE042A2F752200418122 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		4338FE092A2F7AB000418122 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4338FE0C2A2F850100418122 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4381305C2A30431600F33538 /* AddTodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewModel.swift; sourceTree = "<group>"; };
+		438130622A3051F100F33538 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		43A90D792A2F453F002B5F08 /* Netomi_To-Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netomi_To-Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A90D7C2A2F453F002B5F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43A90D7E2A2F453F002B5F08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43A90D802A2F453F002B5F08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43A90D832A2F453F002B5F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43A90D852A2F4541002B5F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43A90D882A2F4541002B5F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43A90D8A2A2F4541002B5F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A90D8F2A2F4542002B5F08 /* Netomi_To-DoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Netomi_To-DoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43A90D932A2F4542002B5F08 /* Netomi_To_DoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netomi_To_DoTests.swift; sourceTree = "<group>"; };
-		43A90D992A2F4542002B5F08 /* Netomi_To-DoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Netomi_To-DoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43A90D9D2A2F4542002B5F08 /* Netomi_To_DoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netomi_To_DoUITests.swift; sourceTree = "<group>"; };
-		43A90D9F2A2F4542002B5F08 /* Netomi_To_DoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netomi_To_DoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43A90DB32A2F4F93002B5F08 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		43A90DB42A2F4F93002B5F08 /* ToDoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoTableViewCell.xib; sourceTree = "<group>"; };
+		43A90DB82A2F66BA002B5F08 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		43A90DBF2A2F6E74002B5F08 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		43B4524C2A3053A900C64CCD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		43B4524E2A3056FB00C64CCD /* Netomi_To-DoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Netomi_To-DoTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		43B4524F2A3056FB00C64CCD /* ListTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTestCase.swift; sourceTree = "<group>"; };
+		B7C12998FDCB013BA2925573 /* Pods-Netomi_To-Do-Netomi_To-DoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netomi_To-Do-Netomi_To-DoUITests.release.xcconfig"; path = "Target Support Files/Pods-Netomi_To-Do-Netomi_To-DoUITests/Pods-Netomi_To-Do-Netomi_To-DoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C226F33BF5EF6517C21CE5D1 /* Pods-Netomi_To-DoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netomi_To-DoTests.debug.xcconfig"; path = "Target Support Files/Pods-Netomi_To-DoTests/Pods-Netomi_To-DoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C43F0F01D01BEB8F3B2D1B88 /* Pods-Netomi_To-Do.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netomi_To-Do.release.xcconfig"; path = "Target Support Files/Pods-Netomi_To-Do/Pods-Netomi_To-Do.release.xcconfig"; sourceTree = "<group>"; };
+		CFEAADC3B20FEDB42D281D0F /* Pods_Netomi_To_DoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Netomi_To_DoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3338DBEED8B0E4912AFEA96 /* Pods-Netomi_To-Do-Netomi_To-DoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netomi_To-Do-Netomi_To-DoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Netomi_To-Do-Netomi_To-DoUITests/Pods-Netomi_To-Do-Netomi_To-DoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0617F9FDF9297AB628EE499 /* Pods-Netomi_To-Do.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netomi_To-Do.debug.xcconfig"; path = "Target Support Files/Pods-Netomi_To-Do/Pods-Netomi_To-Do.debug.xcconfig"; sourceTree = "<group>"; };
+		FE67750B86008364C31F4DB3 /* Pods-Netomi_To-DoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netomi_To-DoTests.release.xcconfig"; path = "Target Support Files/Pods-Netomi_To-DoTests/Pods-Netomi_To-DoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C357249BADFB35979F887931 /* Pods_Netomi_To_Do.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,26 +90,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		43A90D962A2F4542002B5F08 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D6D66F6DFC956978A04E2E55 /* Pods_Netomi_To_DoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4338FDF92A2F6F7400418122 /* NavigationCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4338FDFA2A2F6F9500418122 /* NavigationCoordinator.swift */,
+			);
+			path = NavigationCoordinator;
+			sourceTree = "<group>";
+		};
+		4338FDFE2A2F715600418122 /* DataBaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				4338FDFF2A2F717800418122 /* RealmDBManager.swift */,
+			);
+			name = DataBaseManager;
+			sourceTree = "<group>";
+		};
+		4338FE012A2F740E00418122 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4338FE022A2F744900418122 /* LocalDBRepositry.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4338FE062A2F786A00418122 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4338FE042A2F752200418122 /* ListViewModel.swift */,
+				4381305C2A30431600F33538 /* AddTodoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4338FE072A2F7A7C00418122 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4338FE082A2F7A8400418122 /* UIViewExtenion */,
+				4338FE0C2A2F850100418122 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4338FE082A2F7A8400418122 /* UIViewExtenion */ = {
+			isa = PBXGroup;
+			children = (
+				4338FE092A2F7AB000418122 /* UIView+Extension.swift */,
+			);
+			path = UIViewExtenion;
+			sourceTree = "<group>";
+		};
 		43A90D702A2F453F002B5F08 = {
 			isa = PBXGroup;
 			children = (
 				43A90D7B2A2F453F002B5F08 /* Netomi_To-Do */,
 				43A90D922A2F4542002B5F08 /* Netomi_To-DoTests */,
-				43A90D9C2A2F4542002B5F08 /* Netomi_To-DoUITests */,
 				43A90D7A2A2F453F002B5F08 /* Products */,
+				C8A38EB82670C5A214693579 /* Pods */,
+				BDF938F6B763D4E899E967F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +163,6 @@
 			children = (
 				43A90D792A2F453F002B5F08 /* Netomi_To-Do.app */,
 				43A90D8F2A2F4542002B5F08 /* Netomi_To-DoTests.xctest */,
-				43A90D992A2F4542002B5F08 /* Netomi_To-DoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +170,18 @@
 		43A90D7B2A2F453F002B5F08 /* Netomi_To-Do */ = {
 			isa = PBXGroup;
 			children = (
-				43A90D7C2A2F453F002B5F08 /* AppDelegate.swift */,
-				43A90D7E2A2F453F002B5F08 /* SceneDelegate.swift */,
-				43A90D802A2F453F002B5F08 /* ViewController.swift */,
-				43A90D822A2F453F002B5F08 /* Main.storyboard */,
+				43A90DAC2A2F458B002B5F08 /* Application */,
+				43B4524B2A30539A00C64CCD /* Constants */,
+				4338FE072A2F7A7C00418122 /* Utils */,
+				4338FDF92A2F6F7400418122 /* NavigationCoordinator */,
+				43A90DBC2A2F6D24002B5F08 /* DependencyInjector */,
+				4338FDFE2A2F715600418122 /* DataBaseManager */,
+				4338FE012A2F740E00418122 /* Repository */,
+				43A90DBB2A2F6D1E002B5F08 /* Model */,
+				43A90DAD2A2F459C002B5F08 /* View */,
+				4338FE062A2F786A00418122 /* ViewModel */,
+				43A90DB22A2F4F60002B5F08 /* TableViewCell */,
+				43A90DAE2A2F45BB002B5F08 /* Storyboard */,
 				43A90D852A2F4541002B5F08 /* Assets.xcassets */,
 				43A90D872A2F4541002B5F08 /* LaunchScreen.storyboard */,
 				43A90D8A2A2F4541002B5F08 /* Info.plist */,
@@ -113,18 +192,92 @@
 		43A90D922A2F4542002B5F08 /* Netomi_To-DoTests */ = {
 			isa = PBXGroup;
 			children = (
-				43A90D932A2F4542002B5F08 /* Netomi_To_DoTests.swift */,
+				43B4524F2A3056FB00C64CCD /* ListTestCase.swift */,
+				43B4524E2A3056FB00C64CCD /* Netomi_To-DoTests-Bridging-Header.h */,
 			);
 			path = "Netomi_To-DoTests";
 			sourceTree = "<group>";
 		};
-		43A90D9C2A2F4542002B5F08 /* Netomi_To-DoUITests */ = {
+		43A90DAC2A2F458B002B5F08 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				43A90D9D2A2F4542002B5F08 /* Netomi_To_DoUITests.swift */,
-				43A90D9F2A2F4542002B5F08 /* Netomi_To_DoUITestsLaunchTests.swift */,
+				43A90D7C2A2F453F002B5F08 /* AppDelegate.swift */,
+				43A90D7E2A2F453F002B5F08 /* SceneDelegate.swift */,
 			);
-			path = "Netomi_To-DoUITests";
+			path = Application;
+			sourceTree = "<group>";
+		};
+		43A90DAD2A2F459C002B5F08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				438130622A3051F100F33538 /* ListViewController.swift */,
+				43A90DB82A2F66BA002B5F08 /* AddToDoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43A90DAE2A2F45BB002B5F08 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				43A90D822A2F453F002B5F08 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		43A90DB22A2F4F60002B5F08 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				43A90DB32A2F4F93002B5F08 /* ToDoTableViewCell.swift */,
+				43A90DB42A2F4F93002B5F08 /* ToDoTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		43A90DBB2A2F6D1E002B5F08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43A90DBF2A2F6E74002B5F08 /* ToDoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43A90DBC2A2F6D24002B5F08 /* DependencyInjector */ = {
+			isa = PBXGroup;
+			children = (
+				4338FDFC2A2F6FD100418122 /* DependencyInjector.swift */,
+			);
+			path = DependencyInjector;
+			sourceTree = "<group>";
+		};
+		43B4524B2A30539A00C64CCD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				43B4524C2A3053A900C64CCD /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BDF938F6B763D4E899E967F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290977BDE70DF68580626B31 /* Pods_Netomi_To_Do.framework */,
+				30177FBCF9802EC70199D8A1 /* Pods_Netomi_To_Do_Netomi_To_DoUITests.framework */,
+				CFEAADC3B20FEDB42D281D0F /* Pods_Netomi_To_DoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8A38EB82670C5A214693579 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0617F9FDF9297AB628EE499 /* Pods-Netomi_To-Do.debug.xcconfig */,
+				C43F0F01D01BEB8F3B2D1B88 /* Pods-Netomi_To-Do.release.xcconfig */,
+				D3338DBEED8B0E4912AFEA96 /* Pods-Netomi_To-Do-Netomi_To-DoUITests.debug.xcconfig */,
+				B7C12998FDCB013BA2925573 /* Pods-Netomi_To-Do-Netomi_To-DoUITests.release.xcconfig */,
+				C226F33BF5EF6517C21CE5D1 /* Pods-Netomi_To-DoTests.debug.xcconfig */,
+				FE67750B86008364C31F4DB3 /* Pods-Netomi_To-DoTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43A90DA32A2F4542002B5F08 /* Build configuration list for PBXNativeTarget "Netomi_To-Do" */;
 			buildPhases = (
+				CEE6077872CD61FC9C684B7B /* [CP] Check Pods Manifest.lock */,
 				43A90D752A2F453F002B5F08 /* Sources */,
 				43A90D762A2F453F002B5F08 /* Frameworks */,
 				43A90D772A2F453F002B5F08 /* Resources */,
+				F35FCE3AFFBE7A01052CDBE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43A90DA62A2F4542002B5F08 /* Build configuration list for PBXNativeTarget "Netomi_To-DoTests" */;
 			buildPhases = (
+				4B8347383922AD3E95941A6F /* [CP] Check Pods Manifest.lock */,
 				43A90D8B2A2F4542002B5F08 /* Sources */,
 				43A90D8C2A2F4542002B5F08 /* Frameworks */,
 				43A90D8D2A2F4542002B5F08 /* Resources */,
@@ -164,24 +320,6 @@
 			productName = "Netomi_To-DoTests";
 			productReference = 43A90D8F2A2F4542002B5F08 /* Netomi_To-DoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		43A90D982A2F4542002B5F08 /* Netomi_To-DoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 43A90DA92A2F4542002B5F08 /* Build configuration list for PBXNativeTarget "Netomi_To-DoUITests" */;
-			buildPhases = (
-				43A90D952A2F4542002B5F08 /* Sources */,
-				43A90D962A2F4542002B5F08 /* Frameworks */,
-				43A90D972A2F4542002B5F08 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				43A90D9B2A2F4542002B5F08 /* PBXTargetDependency */,
-			);
-			name = "Netomi_To-DoUITests";
-			productName = "Netomi_To-DoUITests";
-			productReference = 43A90D992A2F4542002B5F08 /* Netomi_To-DoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -198,10 +336,7 @@
 					};
 					43A90D8E2A2F4542002B5F08 = {
 						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 43A90D782A2F453F002B5F08;
-					};
-					43A90D982A2F4542002B5F08 = {
-						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = 43A90D782A2F453F002B5F08;
 					};
 				};
@@ -221,7 +356,6 @@
 			targets = (
 				43A90D782A2F453F002B5F08 /* Netomi_To-Do */,
 				43A90D8E2A2F4542002B5F08 /* Netomi_To-DoTests */,
-				43A90D982A2F4542002B5F08 /* Netomi_To-DoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +368,7 @@
 				43A90D892A2F4541002B5F08 /* LaunchScreen.storyboard in Resources */,
 				43A90D862A2F4541002B5F08 /* Assets.xcassets in Resources */,
 				43A90D842A2F453F002B5F08 /* Main.storyboard in Resources */,
+				43A90DB62A2F4F93002B5F08 /* ToDoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,23 +379,92 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43A90D972A2F4542002B5F08 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B8347383922AD3E95941A6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Netomi_To-DoTests-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		CEE6077872CD61FC9C684B7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Netomi_To-Do-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F35FCE3AFFBE7A01052CDBE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Netomi_To-Do/Pods-Netomi_To-Do-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Netomi_To-Do/Pods-Netomi_To-Do-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Netomi_To-Do/Pods-Netomi_To-Do-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43A90D752A2F453F002B5F08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43A90D812A2F453F002B5F08 /* ViewController.swift in Sources */,
+				4338FDFD2A2F6FD100418122 /* DependencyInjector.swift in Sources */,
 				43A90D7D2A2F453F002B5F08 /* AppDelegate.swift in Sources */,
 				43A90D7F2A2F453F002B5F08 /* SceneDelegate.swift in Sources */,
+				4338FE002A2F717800418122 /* RealmDBManager.swift in Sources */,
+				43A90DB92A2F66BA002B5F08 /* AddToDoViewController.swift in Sources */,
+				43B4524D2A3053A900C64CCD /* Constants.swift in Sources */,
+				4338FE0D2A2F850100418122 /* Utils.swift in Sources */,
+				438130632A3051F100F33538 /* ListViewController.swift in Sources */,
+				4338FE032A2F744900418122 /* LocalDBRepositry.swift in Sources */,
+				4338FE0A2A2F7AB000418122 /* UIView+Extension.swift in Sources */,
+				43A90DB52A2F4F93002B5F08 /* ToDoTableViewCell.swift in Sources */,
+				4381305D2A30431600F33538 /* AddTodoViewModel.swift in Sources */,
+				43A90DC02A2F6E74002B5F08 /* ToDoModel.swift in Sources */,
+				4338FDFB2A2F6F9500418122 /* NavigationCoordinator.swift in Sources */,
+				4338FE052A2F752200418122 /* ListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43A90D942A2F4542002B5F08 /* Netomi_To_DoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		43A90D952A2F4542002B5F08 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43A90DA02A2F4542002B5F08 /* Netomi_To_DoUITestsLaunchTests.swift in Sources */,
-				43A90D9E2A2F4542002B5F08 /* Netomi_To_DoUITests.swift in Sources */,
+				43B452502A3056FB00C64CCD /* ListTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,11 +483,6 @@
 			isa = PBXTargetDependency;
 			target = 43A90D782A2F453F002B5F08 /* Netomi_To-Do */;
 			targetProxy = 43A90D902A2F4542002B5F08 /* PBXContainerItemProxy */;
-		};
-		43A90D9B2A2F4542002B5F08 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43A90D782A2F453F002B5F08 /* Netomi_To-Do */;
-			targetProxy = 43A90D9A2A2F4542002B5F08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -432,6 +622,7 @@
 		};
 		43A90DA42A2F4542002B5F08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0617F9FDF9297AB628EE499 /* Pods-Netomi_To-Do.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +650,7 @@
 		};
 		43A90DA52A2F4542002B5F08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43F0F01D01BEB8F3B2D1B88 /* Pods-Netomi_To-Do.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,17 +678,26 @@
 		};
 		43A90DA72A2F4542002B5F08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C226F33BF5EF6517C21CE5D1 /* Pods-Netomi_To-DoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "self.Netomi-To-DoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Netomi_To-DoTests/Netomi_To-DoTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netomi_To-Do.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Netomi_To-Do";
@@ -505,54 +706,28 @@
 		};
 		43A90DA82A2F4542002B5F08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE67750B86008364C31F4DB3 /* Pods-Netomi_To-DoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "self.Netomi-To-DoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Netomi_To-DoTests/Netomi_To-DoTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netomi_To-Do.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Netomi_To-Do";
-			};
-			name = Release;
-		};
-		43A90DAA2A2F4542002B5F08 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "self.Netomi-To-DoUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Netomi_To-Do";
-			};
-			name = Debug;
-		};
-		43A90DAB2A2F4542002B5F08 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "self.Netomi-To-DoUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Netomi_To-Do";
 			};
 			name = Release;
 		};
@@ -582,15 +757,6 @@
 			buildConfigurations = (
 				43A90DA72A2F4542002B5F08 /* Debug */,
 				43A90DA82A2F4542002B5F08 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		43A90DA92A2F4542002B5F08 /* Build configuration list for PBXNativeTarget "Netomi_To-DoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				43A90DAA2A2F4542002B5F08 /* Debug */,
-				43A90DAB2A2F4542002B5F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
