@@ -10,10 +10,11 @@
 		4338FDFB2A2F6F9500418122 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FDFA2A2F6F9500418122 /* NavigationCoordinator.swift */; };
 		4338FDFD2A2F6FD100418122 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FDFC2A2F6FD100418122 /* DependencyInjector.swift */; };
 		4338FE002A2F717800418122 /* RealmDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FDFF2A2F717800418122 /* RealmDBManager.swift */; };
-		4338FE032A2F744900418122 /* LocalDBRepositry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FE022A2F744900418122 /* LocalDBRepositry.swift */; };
 		4338FE052A2F752200418122 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FE042A2F752200418122 /* ListViewModel.swift */; };
 		4338FE0A2A2F7AB000418122 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FE092A2F7AB000418122 /* UIView+Extension.swift */; };
 		4338FE0D2A2F850100418122 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338FE0C2A2F850100418122 /* Utils.swift */; };
+		436E7A5B2A31E9B5004FF3DD /* TodoListRepositry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E7A5A2A31E9B5004FF3DD /* TodoListRepositry.swift */; };
+		436E7A5E2A31EA5B004FF3DD /* AddTodoRepositry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436E7A5D2A31EA5B004FF3DD /* AddTodoRepositry.swift */; };
 		4381305D2A30431600F33538 /* AddTodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4381305C2A30431600F33538 /* AddTodoViewModel.swift */; };
 		438130632A3051F100F33538 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438130622A3051F100F33538 /* ListViewController.swift */; };
 		43A90D7D2A2F453F002B5F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A90D7C2A2F453F002B5F08 /* AppDelegate.swift */; };
@@ -47,10 +48,11 @@
 		4338FDFA2A2F6F9500418122 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		4338FDFC2A2F6FD100418122 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
 		4338FDFF2A2F717800418122 /* RealmDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBManager.swift; sourceTree = "<group>"; };
-		4338FE022A2F744900418122 /* LocalDBRepositry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDBRepositry.swift; sourceTree = "<group>"; };
 		4338FE042A2F752200418122 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		4338FE092A2F7AB000418122 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		4338FE0C2A2F850100418122 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		436E7A5A2A31E9B5004FF3DD /* TodoListRepositry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRepositry.swift; sourceTree = "<group>"; };
+		436E7A5D2A31EA5B004FF3DD /* AddTodoRepositry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoRepositry.swift; sourceTree = "<group>"; };
 		4381305C2A30431600F33538 /* AddTodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewModel.swift; sourceTree = "<group>"; };
 		438130622A3051F100F33538 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		43A90D792A2F453F002B5F08 /* Netomi_To-Do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netomi_To-Do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,19 +115,10 @@
 			name = DataBaseManager;
 			sourceTree = "<group>";
 		};
-		4338FE012A2F740E00418122 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				4338FE022A2F744900418122 /* LocalDBRepositry.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
 		4338FE062A2F786A00418122 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				4338FE042A2F752200418122 /* ListViewModel.swift */,
-				4381305C2A30431600F33538 /* AddTodoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -145,6 +138,77 @@
 				4338FE092A2F7AB000418122 /* UIView+Extension.swift */,
 			);
 			path = UIViewExtenion;
+			sourceTree = "<group>";
+		};
+		436E7A522A31E8E3004FF3DD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				436E7A552A31E8FA004FF3DD /* AddTodo */,
+				436E7A532A31E8EC004FF3DD /* TodoListView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		436E7A532A31E8EC004FF3DD /* TodoListView */ = {
+			isa = PBXGroup;
+			children = (
+				43A90DBB2A2F6D1E002B5F08 /* Model */,
+				4338FE062A2F786A00418122 /* ViewModel */,
+				436E7A562A31E926004FF3DD /* Controller */,
+				43A90DB22A2F4F60002B5F08 /* TableViewCell */,
+				436E7A592A31E990004FF3DD /* Repositry */,
+			);
+			path = TodoListView;
+			sourceTree = "<group>";
+		};
+		436E7A552A31E8FA004FF3DD /* AddTodo */ = {
+			isa = PBXGroup;
+			children = (
+				436E7A5C2A31EA3C004FF3DD /* Repositry */,
+				436E7A582A31E961004FF3DD /* Controller */,
+				436E7A572A31E94B004FF3DD /* ViewModel */,
+			);
+			path = AddTodo;
+			sourceTree = "<group>";
+		};
+		436E7A562A31E926004FF3DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				438130622A3051F100F33538 /* ListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		436E7A572A31E94B004FF3DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4381305C2A30431600F33538 /* AddTodoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		436E7A582A31E961004FF3DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43A90DB82A2F66BA002B5F08 /* AddToDoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		436E7A592A31E990004FF3DD /* Repositry */ = {
+			isa = PBXGroup;
+			children = (
+				436E7A5A2A31E9B5004FF3DD /* TodoListRepositry.swift */,
+			);
+			path = Repositry;
+			sourceTree = "<group>";
+		};
+		436E7A5C2A31EA3C004FF3DD /* Repositry */ = {
+			isa = PBXGroup;
+			children = (
+				436E7A5D2A31EA5B004FF3DD /* AddTodoRepositry.swift */,
+			);
+			path = Repositry;
 			sourceTree = "<group>";
 		};
 		43A90D702A2F453F002B5F08 = {
@@ -170,17 +234,14 @@
 		43A90D7B2A2F453F002B5F08 /* Netomi_To-Do */ = {
 			isa = PBXGroup;
 			children = (
-				43A90DAC2A2F458B002B5F08 /* Application */,
-				43B4524B2A30539A00C64CCD /* Constants */,
-				4338FE072A2F7A7C00418122 /* Utils */,
+				43A90D7C2A2F453F002B5F08 /* AppDelegate.swift */,
+				43A90D7E2A2F453F002B5F08 /* SceneDelegate.swift */,
 				4338FDF92A2F6F7400418122 /* NavigationCoordinator */,
 				43A90DBC2A2F6D24002B5F08 /* DependencyInjector */,
+				436E7A522A31E8E3004FF3DD /* Modules */,
+				43B4524B2A30539A00C64CCD /* Constants */,
+				4338FE072A2F7A7C00418122 /* Utils */,
 				4338FDFE2A2F715600418122 /* DataBaseManager */,
-				4338FE012A2F740E00418122 /* Repository */,
-				43A90DBB2A2F6D1E002B5F08 /* Model */,
-				43A90DAD2A2F459C002B5F08 /* View */,
-				4338FE062A2F786A00418122 /* ViewModel */,
-				43A90DB22A2F4F60002B5F08 /* TableViewCell */,
 				43A90DAE2A2F45BB002B5F08 /* Storyboard */,
 				43A90D852A2F4541002B5F08 /* Assets.xcassets */,
 				43A90D872A2F4541002B5F08 /* LaunchScreen.storyboard */,
@@ -196,24 +257,6 @@
 				43B4524E2A3056FB00C64CCD /* Netomi_To-DoTests-Bridging-Header.h */,
 			);
 			path = "Netomi_To-DoTests";
-			sourceTree = "<group>";
-		};
-		43A90DAC2A2F458B002B5F08 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				43A90D7C2A2F453F002B5F08 /* AppDelegate.swift */,
-				43A90D7E2A2F453F002B5F08 /* SceneDelegate.swift */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		43A90DAD2A2F459C002B5F08 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				438130622A3051F100F33538 /* ListViewController.swift */,
-				43A90DB82A2F66BA002B5F08 /* AddToDoViewController.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		43A90DAE2A2F45BB002B5F08 /* Storyboard */ = {
@@ -455,10 +498,11 @@
 				43A90D7F2A2F453F002B5F08 /* SceneDelegate.swift in Sources */,
 				4338FE002A2F717800418122 /* RealmDBManager.swift in Sources */,
 				43A90DB92A2F66BA002B5F08 /* AddToDoViewController.swift in Sources */,
+				436E7A5B2A31E9B5004FF3DD /* TodoListRepositry.swift in Sources */,
 				43B4524D2A3053A900C64CCD /* Constants.swift in Sources */,
 				4338FE0D2A2F850100418122 /* Utils.swift in Sources */,
 				438130632A3051F100F33538 /* ListViewController.swift in Sources */,
-				4338FE032A2F744900418122 /* LocalDBRepositry.swift in Sources */,
+				436E7A5E2A31EA5B004FF3DD /* AddTodoRepositry.swift in Sources */,
 				4338FE0A2A2F7AB000418122 /* UIView+Extension.swift in Sources */,
 				43A90DB52A2F4F93002B5F08 /* ToDoTableViewCell.swift in Sources */,
 				4381305D2A30431600F33538 /* AddTodoViewModel.swift in Sources */,

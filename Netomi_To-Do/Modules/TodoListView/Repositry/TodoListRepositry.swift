@@ -1,15 +1,15 @@
 //
-//  LocalDBRepositry.swift
+//  TodoListRepositry.swift
 //  Netomi_To-Do
 //
-//  Created by SPURGE on 06/06/23.
+//  Created by SPURGE on 08/06/23.
 //
 
+
 import Foundation
-protocol LocalDBProtocol {
+protocol ToDoListRepositoryProtocol {
     var dataSource: RealmManagerProtocol { get set }
     
-    func saveTodo(todo: ToDo)
     func fetchTaskWithFilter(filter:DB_Filter) -> [ToDo]
     func updateStatus(todo:ToDo, status:String)
     func deleteTodo(todo: ToDo)
@@ -17,16 +17,12 @@ protocol LocalDBProtocol {
 }
 
 
-final class LocalDBRepository: LocalDBProtocol {
+final class ToDoListRepository: ToDoListRepositoryProtocol {
     
     var dataSource: RealmManagerProtocol
     
     init(dataSource: RealmManagerProtocol) {
         self.dataSource = dataSource
-    }
-    
-    func saveTodo(todo: ToDo) {
-        dataSource.saveTodo(todo: todo)
     }
     
     func fetchTaskWithFilter(filter:DB_Filter) -> [ToDo] {
@@ -47,3 +43,4 @@ final class LocalDBRepository: LocalDBProtocol {
     
     
 }
+

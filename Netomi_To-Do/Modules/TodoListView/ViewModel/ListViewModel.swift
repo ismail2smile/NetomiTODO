@@ -15,7 +15,7 @@ enum DateDisplayFormat: String{
 
 protocol ListViewModelProtocol {
     var todos: [ToDo] { get set }
-    var repo: LocalDBProtocol { get set }
+    var repo: ToDoListRepositoryProtocol { get set }
 
     func fetchTaskWithFilter(filter:DB_Filter)
     func deleteTodo(todo: ToDo)
@@ -25,9 +25,9 @@ protocol ListViewModelProtocol {
 final class ListViewModel: ListViewModelProtocol {
     
     var todos: [ToDo]
-    var repo: LocalDBProtocol
+    var repo: ToDoListRepositoryProtocol
     
-    init(todos: [ToDo], repo: LocalDBProtocol) {
+    init(todos: [ToDo], repo: ToDoListRepositoryProtocol) {
         self.todos = todos
         self.repo = repo
     }

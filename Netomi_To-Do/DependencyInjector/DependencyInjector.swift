@@ -16,12 +16,12 @@ struct DependencyInjector {
         return RealmLocalDataSource(realm: realm)
     }
     
-    static var repo: LocalDBRepository {
-        return LocalDBRepository(dataSource: self.dataSource)
+    static var todoListrepo: ToDoListRepositoryProtocol {
+        return ToDoListRepository(dataSource: self.dataSource)
     }
     
     static var listViewModel: ListViewModel {
-        return ListViewModel(todos: self.todos, repo: self.repo)
+        return ListViewModel(todos: self.todos, repo: self.todoListrepo)
     }
     
     static var rootViewController: ListViewController {
@@ -31,10 +31,13 @@ struct DependencyInjector {
         return listVC
     }
     
-    
-    static var addTodoViewModel: AddTodoViewModel {
-        return AddTodoViewModel(repo: self.repo)
+    static var addTodoRepo: AddTodoRepositoryProtocol {
+        return AddTodoRepository(dataSource: self.dataSource)
     }
+    static var addTodoViewModel: AddTodoViewModel {
+        return AddTodoViewModel(repo: self.addTodoRepo)
+    }
+    
     static var addTodoViewcontroller: AddToDoViewController {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let todoVC = storyBoard.instantiateViewController(withIdentifier: "AddToDoViewController") as! AddToDoViewController

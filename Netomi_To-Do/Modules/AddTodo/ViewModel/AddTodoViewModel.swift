@@ -10,14 +10,14 @@ import RealmSwift
 
 
 protocol AddViewModelProtocol {
-    var repo: LocalDBProtocol { get set }
+    var repo: AddTodoRepositoryProtocol { get set }
     func saveTodo(todo: ToDo)
 }
 
 final class AddTodoViewModel: AddViewModelProtocol {
-    var repo: LocalDBProtocol
+    var repo: AddTodoRepositoryProtocol
     
-    init(repo: LocalDBProtocol) {
+    init(repo: AddTodoRepositoryProtocol) {
         self.repo = repo
     }
     
